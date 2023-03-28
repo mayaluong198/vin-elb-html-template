@@ -1,0 +1,698 @@
+/**
+* Layout Responsive Header & Footer
+*/
+
+@media (min-width: 576px) {
+    footer {
+        padding: 50px 0;
+    }
+    footer .footer-list-link {
+        margin-top: 0;
+    }
+
+    footer .block-newsletter {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .only-show-mobile {
+        display: none;
+    }
+    .block-involved > .block-content, 
+    .block-partners > .block-content {
+        max-width: 960px;
+        margin: 0 auto;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .block-news .new-list {
+        max-height: 405px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .block-news .new-list {
+        max-height: 520px;
+    }
+    footer .footer-content div.logo , 
+    footer .footer-content  .footer-list-link {
+        margin-top: 50px;
+    }
+
+    .page-header {
+        padding: 0;
+    }
+
+    .page-header  .header-left-content {
+        width: 207px;
+    }
+
+    .page-header .header-wrappper .main-menu {
+        position: static;
+        height: auto;
+        display: block;
+        transform: inherit;
+        opacity: 1;
+        visibility: visible;
+        width: auto;
+        overflow: inherit;
+    }
+   
+    .page-header .header-wrappper .navbar-default {
+        margin-top: 0;
+        position: static;
+    }
+    
+    .page-header .header-wrappper  .megamenu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        position: static;
+    }
+    
+    .header-wrappper .megamenu .mega-menu-link {
+        border-top: 0;
+        padding: 46px 20px;
+        text-align: center;
+    }
+
+    .megamenu .megamenu-item:last-child {
+        border-bottom: none;
+    }
+
+    .page-header .megamenu .mega-sub-menu {
+        align-items: center;
+        padding: 24px 74px;
+        z-index: 11;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+        transition: all 350ms;
+        justify-content: center;
+    }
+    .page-header .megamenu .mega-sub-menu.full-width {
+        justify-content: space-between;
+    }
+
+    .page-header .megamenu .megamenu-item.active > .mega-sub-menu {
+        
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+
+    .block-involved .item .content {
+        padding: 30px 50px;
+    }
+    .block-involved .content .actions {
+        margin-top: 10px;
+        max-width: 50%;
+    }
+
+    .block-involved .item .text, 
+    .block-involved .item .actions {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 300ms;
+    }
+
+    .block-involved .item:hover > .content .text, 
+    .block-involved .item:hover > .content .actions {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .block-involved > .block-content, 
+    .block-partners > .block-content {
+        max-width: 1140px;
+    }
+
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .page-header .header-search-wrap,  
+    .page-header .header-left-content {
+        width: 150px;
+    }
+    .header-wrappper .megamenu .mega-menu-link {
+        font-size: 15px;
+        padding: 45px 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+     
+}
+
+
+/**
+* Home Page
+*/
+
+@media (max-width: 1400px) {
+    .block-blogs .blog-image img {
+        height: 100%;
+    }
+    .block-blogs .blog-content {
+        flex: 0 1 40%;
+    }
+    .block-blogs .blog-image {
+        flex: 0 0 60%;
+    }
+    
+}
+@media (max-width: 1200px) {
+    .block-blogs .blog-content {
+        flex: 0 1 50%;
+    }
+    .block-blogs .blog-image {
+        flex: 0 0 50%;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    .section.block-blogs {
+        padding-top: 50px;
+    }
+
+    .owl-carousel.owl-theme .owl-nav button  {
+        left: 0;
+    }
+
+    .owl-carousel.owl-theme .owl-nav button.owl-next {
+        right: 0;
+    }
+
+    .mentor-detail-popup .modal-body {
+        padding: 20px 24px 32px;
+    }
+    .mentor-detail-popup .mentor-detail {
+        gap: 20px;
+    }
+
+    .mentor-detail .detail {
+        overflow: hidden;
+    }
+
+    .mentor-detail .detail .content {
+        max-height: 250px;
+        overflow: auto;
+        padding-right: 20px;
+    }
+
+    .list-colleges .college .content .text {
+        padding-left: 32px;
+    }
+
+    .list-colleges .college.content-left .content .text {
+        padding-left: 0;
+        padding-right: 32px;
+    }
+    .page-banner .new-post:after {
+        transform: rotate(0);
+        top: 0;
+    }
+    .page-banner .new-post .content {
+        top: 0;
+        bottom: auto;
+    }
+    .page-banner {
+        margin-top: 12px;
+    }
+
+    .block-somethings .item .name {
+        width: 300px;
+    }
+}
+@media (max-width: 991px) {
+    .block-somethings .item {
+        width: 100%;
+    }
+    .upcoming-events .order-mb-last {
+        order: 999;
+        margin-top: 16px;
+    }
+    .section.block-blogs {
+        padding-top: 0;
+    }
+    .section.block-somethings, .section.block-involved, .section.block-partners {
+        padding: 30px 0;
+    }
+    .physical-space-page .banner-slider .slider.slider-for .slick-arrow {
+        display: none !important;
+    }
+    .block-infor-page {
+        margin-top: 10px;
+    }
+    .breadcrumbs {
+        margin-top: 16px;
+    }
+
+    .new-listing-page .section.block-news {
+        padding-bottom: 16px;
+        padding-top: 0;
+    }
+    .page-banner .new-post .post-name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .block-colleges .list-colleges .college {
+        flex-wrap: wrap;
+    }
+    .block-colleges .list-colleges .flex-w-50 {
+        flex: 0 0 100%;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .list-colleges .college.content-left .content {
+        order: 2;
+    }
+    .list-colleges .college .content .text,
+    .list-colleges .college.content-left .content .text {
+        padding: 16px 16px 0 ;
+        max-width: 100%;
+    }
+    .block-colleges .list-colleges .image img {
+        width: 100%;
+    }
+    .list-colleges .college .text a.btn {
+        width: 100%;
+    }
+    .primary-banner .intro {
+        position: static;
+        padding: 32px 24px;
+    }
+    .primary-banner .intro .intro-title {
+        color: #010101 !important;
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .only-show-desktop {
+        display: none;
+    }
+
+    .block-blogs .item.blog-item {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .block-blogs .blog-content .blog-actions {
+        margin-top: 76px;
+    }
+    .block-blogs .blog-item.event .blog-actions {
+        margin-top: 25px;
+    }
+
+    .block-blogs .blog-content {
+        flex: 0 1 100%;
+        order: 2;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 24px 16px;
+    }
+    .block-blogs .blog-image {
+        flex: 0 0 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .block-blogs .hot-news .blog-content {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        margin-top: 16px;
+        padding: 24px 16px;
+    }
+
+    .block-blogs .hot-news .blog-image {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .block-blogs .blog-content .blog-title {
+        font-size: 16px;
+    }
+
+    .block-blogs .blog-content .description {
+        font-size: 14px;
+    }
+    .block-blogs .hot-news .blog-content .blog-actions {
+        margin-top: 25px;
+    }
+
+    .our-mission .list-mission {
+        flex-wrap: wrap;
+    }
+    .our-mission .list-mission .item {
+        flex: 0 0 100%;
+    }
+
+    .block-somethings .item-content {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 10.03%, rgba(0, 0, 0, 0) 88.11%);
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-somethings .item .sub-title {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .block-somethings .item .name {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .block-somethings .item .actions  {
+        margin-top: auto;
+    }
+
+    .block-somethings .item .actions .btn {
+        width: 100%;
+        padding: 13px 20px;
+    }
+
+    .block-teams .owl-carousel.owl-theme .owl-nav button.owl-prev {
+        display: none;
+    }
+
+    .page-title-wrapper .page-title-content {
+        padding-left: 0;
+        padding-right: 0;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    .block-news .new-list {
+        margin-top: 16px;
+    }
+    .mentor-detail .detail, 
+    .mentor-detail .mentor-image {
+        flex: 0 0 100%;
+    }
+    .mentor-detail .detail .content {
+        max-height: 100%;
+        overflow: auto;
+        padding-right: 0;
+    }
+
+    .involved-industry-page .page-content {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    .block-blogs .blog-image {
+        padding-bottom: 54%;
+    }
+    .page-title-wrapper .page-title-image {
+        padding-bottom: 0;
+        text-align: center;
+        max-width: 380px;
+        margin: 0 auto;
+        padding-top: 130px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .page-title-wrapper .page-title-image {
+        padding-top: 20px;
+    }
+    .event-detail-popup .modal-lg {
+        margin: 0 auto;
+    }
+    .event-detail-popup .modal-body {
+        max-height: 100vh;
+        padding: 32px 16px;
+    }
+    .event-detail-popup .action {
+        padding-top: 0;
+    }
+    .faculty-staff-page .section.posts-list.gap-16 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .breadcrumbs + .section.opportunities {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .section.opportunity .block-content {
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
+    .section.block-blogs.upcoming-events {
+        background: linear-gradient(254.65deg, #FF6B6B 42.51%, #AC0C0C 100.62%);
+    }
+    .section.opportunities + .section.block-partners + .block-blogs.upcoming-events {
+        padding-bottom: 30px;
+    }
+    .upcoming-events.block-blogs .hot-news .blog-content {
+        padding: 24px 0 0;
+        margin-top: 0;
+        background: transparent;
+    }
+    .upcoming-events.block-blogs .hot-news {
+        margin-top: 0;
+    }
+
+    .block-blogs .blog-content .blog-actions .btn {
+        width: 100%;
+    }
+    .block-blogs .blog-content .blog-actions .btn + .btn {
+        margin-top: 8px;
+    }
+    .block-infor-page .infor {
+        margin-bottom: 16px;
+    }
+    
+    .order-mb-4 {
+        order: 4;
+    }
+    .order-mb-5 {
+        order: 5;
+    }
+    .order-mb-6 {
+        order: 6;
+    }
+    .order-mb-last {
+        order: 99;
+    }
+    .section.block-entrepreneurship, 
+    .section.block-entrepreneurship-journey {
+        padding: 20px 0;
+    }
+    .section.posts-list.gap-16 {
+        margin-bottom: 20px;
+    }
+    .posts-list .post .name {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .posts-list .post .content .read-more {
+        margin-top: auto;
+    }
+
+    .posts-list .post .content {
+        padding: 18px 15px;
+        display: flex;
+    }
+
+    .section.step-book-room .block-content {
+        padding: 0 0 24px;
+    }
+    .section.medias-listing {
+        padding: 16px 0;
+    }
+    .medias-listing .media {
+        margin-bottom: 16px;
+    }
+    .medias-listing .media .image img {
+        width: 100%;
+    }
+    .block-news.news-listing .posts + .actions .btn {
+        width: 100%;
+    }
+    .block-news .new-list {
+        max-height: 375px;
+    }
+    .block-news .new-item:not(.first) p {
+        display: none;
+    }
+    .slide-mb-right-0 .container.full-width-mb, 
+    .slide-mb-right-0 .container-sm.full-width-mb {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .block-blogs .blog-item.event .blog-actions {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-title-wrapper .page-title-content { 
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .page-title-wrapper .page-title-content .title {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 39px; 
+    }
+
+    .page-title-wrapper {
+        padding-top: 170px;
+    }
+
+    .transform-top-85 {
+        transform: translateY(-75px);
+    }
+    .block-entrepreneurship .item.big-item .content,
+    .block-entrepreneurship .item .content  {
+        padding: 14px 11px;
+    }
+    .block-entrepreneurship .item.big-item .content h4,
+    .block-entrepreneurship .item .content .title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .block-entrepreneurship-journey .content .item {
+        position: relative;
+    }
+
+    .block-entrepreneurship-journey .content .item .btn-download {
+        position: absolute;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 0;
+        margin: 16px 0;
+    }
+
+    .side-pathway .list-path {
+        flex-direction: column;
+    }
+
+    .side-pathway .list-path:before {
+        bottom: 0;
+        right: auto;
+        width: 1px;   
+        height: 95%;
+        left: 7px;
+    }
+
+    .side-pathway .list-path li {
+        margin-top: 0;
+        width: 100%;
+        padding-right: 0;
+        position: relative;
+        padding-left: 26px;
+    }
+
+    .side-pathway .list-path li + li {
+        margin-top: 16px;
+    }
+
+    .side-pathway .list-path li:before {
+        top: 12px;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    .side-pathway .list-path li:first-child:before {
+        top: 0;
+        transform: translateY(0);
+    }
+
+    .programs {
+        flex-direction: column;
+    }
+
+
+    .section.block-news, .section.block-teams {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .block-blogs {
+        padding-top: 40px;
+    }
+
+    .section.block-our-mentors {
+        padding: 32px 0;
+    }
+
+    .block-our-testimonials .testimonial-item {
+        margin-bottom: 12px;
+        height: auto;
+    }
+
+    .section.block-infor-notes, 
+    .section.block-questions-answer {
+        padding: 24px 16px;
+    }
+
+    .section.block-recommend {
+        padding: 24px 0;
+    }
+
+    .section.block-recommend .block-content h3 {
+        margin: 0;
+        font-weight: 300;
+font-size: 26px;
+line-height: 32px;
+    }
+
+    .block-blogs .blog-item.event .blog-content .blog-actions .btn + .btn {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+
+}
+
+@media (max-width: 575px) {
+    .block-news .new-item.first .new-name {
+        font-weight: 400; 
+        font-size: 16px; 
+        line-height: 21px;
+    }
+
+    .breadcrumbs .items a {
+        font-size: 13px;
+    }
+
+    .breadcrumbs .items li + li:before {
+        margin: 0 0 0 3px; 
+    }
+}
+
+@media (max-width: 413px) {
+    .block-blogs .blog-item .blog-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .block-blogs .blog-content .blog-actions {
+        margin-top: 72px;
+    }
+    .block-blogs .blog-content .blog-actions .btn {
+        font-size: 14px;
+    }
+}
